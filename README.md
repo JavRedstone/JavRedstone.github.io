@@ -1,1 +1,5 @@
-# JavRedstone.github.io
+**Github Page**
+
+My own github page / website.
+
+Enjoy!
