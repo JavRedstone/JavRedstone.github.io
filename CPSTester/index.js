@@ -31,6 +31,7 @@ const startClick = function () {
             CPSTracker.innerHTML = `${~~(clickAmount * 1000 / (Date.now() - recording))} CPS`;
             started = false;
             clickAmount = 0;
+            recording = null;
         }
     }
 };
