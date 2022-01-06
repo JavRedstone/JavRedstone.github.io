@@ -12,6 +12,12 @@ const websites = [
         image: "DrawingBoard/DrawingBoard.png",
         description: "Simple 'Drawing Board' website that allows you to draw on a blackboard, with the option of seven different most-used colors, as well as the eraser and clear functions.",
         link: "DrawingBoard/index.html"
+    },
+    {
+        name: "CPS Tester",
+        image: "CPSTester/CPStester.png",
+        description: "Simple 'CPS Tester' website that allows you to test out how fast you click!",
+        link: "CPSTester/index.html"
     }
 ];
 

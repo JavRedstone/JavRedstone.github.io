@@ -1,0 +1,37 @@
+:root {
+    --color: #ffcd00;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Arial";
+}
+
+#CPSButton {
+    position: absolute;
+
+    background-color: var(--color);
+    border: none;
+    border-radius: 100%;
+
+    font-size: 5vw;
+}
+
+#CPSButton:hover {
+    cursor: pointer;
+}
+
+#CPSTracker {
+    width: 10%;
+    height: 10%;
+    position: absolute;
+    left: 45%;
+    top: 5%;
+
+    border: 5px solid black;
+    box-sizing: border-box;
+
+    text-align: center;
+    line-height: 10vh;
+    font-size: 2.5vw;
+}

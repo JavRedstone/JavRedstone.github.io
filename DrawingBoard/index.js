@@ -31,6 +31,7 @@ const loadElements = function () {
 
 let colorSelected = false;
 let erasing = false;
+let drawing = false;
 const selectPaint = function (paint, color) {
     for (let i = 0; i < sideBar.children.length; i++) {
         let child = sideBar.children[i];
@@ -53,14 +54,13 @@ const selectPaint = function (paint, color) {
         }
         paint.style.width = `${selectLen}px`;
     }
+    drawing = false;
 };
 
-let drawing = false;
-drawBoard.addEventListener("mousemove", function (event) {
+const draw = function (cX, cY) {
     if (drawing) {
-        let x = event.clientX - sideBarWidth;
-        let y = event.clientY;
-        console.log(x, y);
+        let x = cX - sideBarWidth;
+        let y = cY;
         if (colorSelected) {
             ctx.lineTo(x, y);
             ctx.stroke();
@@ -69,15 +69,30 @@ drawBoard.addEventListener("mousemove", function (event) {
             ctx.clearRect(x - 10, y - 10, 20, 20);
         }
     }
+};
+
+drawBoard.addEventListener("mousemove", function (event) {
+    draw(event.clientX, event.clientY);
 });
+drawBoard.addEventListener("touchmove", function (event) {
+    var touch = event.touches[0];
+    draw(touch.clientX, touch.clientY);
+}, false);
 drawBoard.addEventListener("mousedown", function () {
     ctx.beginPath();
     ctx.lineWidth = 1;
     drawing = true;
 });
-
+drawBoard.addEventListener("touchstart", function (event) {
+    ctx.beginPath();
+    ctx.lineWidth = 1;
+    drawing = true;
+}, false);
 drawBoard.addEventListener("mouseup", function () {
     drawing = false;
 });
+drawBoard.addEventListener("touchend", function (event) {
+    drawing = false;
+}, false);
 
 loadElements();
