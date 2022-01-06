@@ -10,7 +10,7 @@ const websites = [
     {
         name: "Drawing Board",
         image: "DrawingBoard/DrawingBoard.png",
-        description: "Simple 'Drawing Board' website that allows you to draw on a blackboard, with the option of six different most-used colors, as well as the eraser and clear functions.",
+        description: "Simple 'Drawing Board' website that allows you to draw on a blackboard, with the option of seven different most-used colors, as well as the eraser and clear functions.",
         link: "DrawingBoard/index.html"
     }
 ];
