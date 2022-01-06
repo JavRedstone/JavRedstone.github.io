@@ -59,6 +59,7 @@ const createElements = function () {
 };
 
 const showDetails = function (website) {
+    directions.style.visibility = "hidden";
     displayContainer.style.visibility = "visible";
     displayMenu.src = website.link;
     displayDesc.innerHTML = website.description;

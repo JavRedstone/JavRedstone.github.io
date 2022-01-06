@@ -34,6 +34,23 @@ body {
     border-right: var(--border);
 }
 
+#directions {
+    width: 70%;
+    height: 50px;
+    position: absolute;
+    left: 30%;
+    top: 50px;
+
+    background-color: var(--bg-color-light);
+    border: var(--border);
+    border-right: none;
+    box-sizing: border-box;
+
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+}
+
 #displayContainer {
     width: 70%;
     height: 100%;
