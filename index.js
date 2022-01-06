@@ -15,7 +15,7 @@ const websites = [
     },
     {
         name: "CPS Tester",
-        image: "CPSTester/CPStester.png",
+        image: "CPSTester/CPSTester.png",
         description: "Simple 'CPS Tester' website that allows you to test out how fast you click!",
         link: "CPSTester/index.html"
     }
