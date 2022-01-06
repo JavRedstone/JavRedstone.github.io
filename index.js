@@ -59,7 +59,7 @@ const createElements = function () {
         linkTo.style.width = "20%";
         linkTo.style.left = "75%";
         linkTo.style.top = "10px";
-        linkTo.innerHTML = "Link &#129109;";
+        linkTo.innerHTML = "Link &#128279;";
         a.append(linkTo);
     }
 };
