@@ -1,0 +1,66 @@
+:root {
+    --border: 2px solid #ccc;
+}
+
+body {
+    background-color: #222;
+    font-family: "Arial";
+}
+
+#logo {
+    width: 70px;
+    height: 25%;
+    position: absolute;
+    left: 5px;
+    top: 1%;
+    
+    font-size: 2.5vh;
+    font-style: italic;
+    word-wrap: break-word;
+    color: #fff;
+}
+
+#sideBar {
+    width: 75px;
+    height: 50%;
+    position: absolute;
+    left: 0%;
+    top: 25%;
+}
+
+paint {
+    width: 100%;
+    position: absolute;
+    left: 0%;
+
+    background-color: #111;
+    border: var(--border);
+    border-left: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    box-sizing: border-box;
+
+    font-size: 2.5vh;
+    text-align: center;
+    color: #fff;
+}
+
+paint:hover {
+    cursor: pointer;
+}
+
+paintColor {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    left: 0%;
+    top: 25%;
+}
+
+#drawBoard {
+    position: absolute;
+    left: 75px;
+    top: 0%;
+
+    background-color: #000;
+}

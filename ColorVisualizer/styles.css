@@ -1,0 +1,48 @@
+body {
+    background-image: url(Background.svg);
+    background-size: 3%;
+    font-family: "Arial";
+    letter-spacing: 5px;
+}
+
+input {
+    font-family: "Arial";
+    letter-spacing: 5px;
+}
+
+#colorFilter {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+
+    background-color: #000;
+}
+
+#colorTitle {
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    left: 0%;
+    top: 65%;
+
+    text-align: center;
+    font-size: 5vw;
+    color: #fff;
+    text-shadow: 2px 2px 10px #000;
+}
+
+#colorChooser {
+    width: 40%;
+    height: 10%;
+    position: absolute;
+    left: 30%;
+    top: 80%;
+
+    border: 5px solid #a0a0A0;
+    border-radius: 10px;
+    outline: none;
+
+    font-size: 5vh;
+}
